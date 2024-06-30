@@ -1,0 +1,270 @@
+$comment
+	File created using the following command:
+		vcd file lab6.msim.vcd -direction
+$end
+$date
+	Mon Dec 04 11:05:15 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module ALU3_vlg_vec_tst $end
+$var reg 8 ! A [7:0] $end
+$var reg 8 " B [7:0] $end
+$var reg 1 # Clock $end
+$var reg 16 $ OP [15:0] $end
+$var wire 1 % Neg $end
+$var wire 1 & R1 [3] $end
+$var wire 1 ' R1 [2] $end
+$var wire 1 ( R1 [1] $end
+$var wire 1 ) R1 [0] $end
+$var wire 1 * R2 [3] $end
+$var wire 1 + R2 [2] $end
+$var wire 1 , R2 [1] $end
+$var wire 1 - R2 [0] $end
+$var wire 1 . sampler $end
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var tri1 1 2 devclrn $end
+$var tri1 1 3 devpor $end
+$var tri1 1 4 devoe $end
+$var wire 1 5 WideOr0~0_combout $end
+$var wire 1 6 Clock~combout $end
+$var wire 1 7 Clock~clkctrl_outclk $end
+$var wire 1 8 WideOr0~5_combout $end
+$var wire 1 9 WideOr0~6_combout $end
+$var wire 1 : WideOr0~3_combout $end
+$var wire 1 ; WideOr0~2_combout $end
+$var wire 1 < WideOr0~1_combout $end
+$var wire 1 = WideOr0~4_combout $end
+$var wire 1 > WideOr0~7_combout $end
+$var wire 1 ? Result[4]~feeder_combout $end
+$var wire 1 @ Result [7] $end
+$var wire 1 A Result [6] $end
+$var wire 1 B Result [5] $end
+$var wire 1 C Result [4] $end
+$var wire 1 D Result [3] $end
+$var wire 1 E Result [2] $end
+$var wire 1 F Result [1] $end
+$var wire 1 G Result [0] $end
+$var wire 1 H OP~combout [15] $end
+$var wire 1 I OP~combout [14] $end
+$var wire 1 J OP~combout [13] $end
+$var wire 1 K OP~combout [12] $end
+$var wire 1 L OP~combout [11] $end
+$var wire 1 M OP~combout [10] $end
+$var wire 1 N OP~combout [9] $end
+$var wire 1 O OP~combout [8] $end
+$var wire 1 P OP~combout [7] $end
+$var wire 1 Q OP~combout [6] $end
+$var wire 1 R OP~combout [5] $end
+$var wire 1 S OP~combout [4] $end
+$var wire 1 T OP~combout [3] $end
+$var wire 1 U OP~combout [2] $end
+$var wire 1 V OP~combout [1] $end
+$var wire 1 W OP~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10111 !
+b101000 "
+0#
+b0 $
+0%
+0)
+0(
+0'
+0&
+0-
+0,
+0+
+0*
+x.
+0/
+10
+x1
+12
+13
+14
+05
+06
+07
+18
+19
+1:
+1;
+0<
+0=
+0>
+0?
+0G
+zF
+zE
+zD
+0C
+zB
+zA
+z@
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+$end
+#25000
+1#
+b1 $
+16
+1W
+17
+0.
+08
+#50000
+0#
+06
+07
+1.
+#75000
+b11 $
+b10 $
+1#
+0W
+1V
+16
+17
+0.
+#100000
+0#
+06
+07
+1.
+#125000
+b110 $
+b100 $
+1#
+0V
+1U
+16
+17
+0.
+18
+0;
+15
+1=
+1>
+1?
+#150000
+0#
+06
+07
+1.
+#175000
+b1100 $
+b1000 $
+1#
+0U
+1T
+16
+17
+0.
+1;
+05
+1<
+0:
+1C
+1G
+1-
+1)
+#200000
+0#
+06
+07
+1.
+#225000
+b11000 $
+b10000 $
+1#
+0T
+1S
+16
+17
+0.
+#250000
+0#
+06
+07
+1.
+#275000
+b110000 $
+b100000 $
+1#
+0S
+1R
+16
+17
+0.
+#300000
+0#
+06
+07
+1.
+#325000
+b1100000 $
+b1000000 $
+1#
+0R
+1Q
+16
+17
+0.
+0<
+1:
+0;
+15
+#350000
+0#
+06
+07
+1.
+#375000
+b11000000 $
+b10000000 $
+1#
+0Q
+1P
+16
+17
+0.
+#400000
+0#
+06
+07
+1.
+#425000
+b110000000 $
+b100000000 $
+1#
+0P
+1O
+16
+17
+0.
+#450000
