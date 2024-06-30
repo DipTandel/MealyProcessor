@@ -1,0 +1,60 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY ALU3 IS
+    PORT (
+        Clock : IN STD_LOGIC;
+        A, B : IN UNSIGNED(7 DOWNTO 0);
+        OP : IN UNSIGNED(15 DOWNTO 0);
+        Neg : OUT STD_LOGIC;
+        Result : OUT UNSIGNED(7 DOWNTO 0) -- Result
+    );
+END ALU3;
+
+ARCHITECTURE Behavior OF ALU3 IS
+    SIGNAL Reg1, Reg2, Result: UNSIGNED(7 DOWNTO 0) := (OTHERS => '0');
+BEGIN
+    Reg1 <= A;
+    Reg2 <= B;
+
+    PROCESS (Clock, OP)
+    BEGIN
+        IF (rising_edge(Clock)) THEN
+            CASE OP IS
+                WHEN "0000000000000001" => -- even parity 5, For each microcode instruction, display 'y' if the FSM output (student_id) had an even parity and 'n' otherwise
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN "0000000000000010" => -- even parity 0
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN "0000000000000100" => -- odd parity 1
+                    Neg <= '0';
+                    Result <= "00000000";
+                WHEN "0000000000001000" => -- odd parity 2
+                    Neg <= '0';
+                    Result <= "00000000";
+                WHEN "0000000000010000" => -- even parity 0
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN "0000000000100000" => -- even parity 3
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN "0000000001000000" => -- even parity 0
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN "0000000010000000" => -- even parity 0
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN "0000000100000000" => -- even parity 9
+                    Neg <= '0';
+                    Result <= "00010001";
+                WHEN OTHERS => -- Don't care
+                    Result <= "--------";
+            END CASE;
+        END IF;
+    END PROCESS;
+	 R1 <= Result(3 downto 0);	
+	 R2 <= Result(7 downto 4);
+END Behavior;
